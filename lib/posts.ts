@@ -13,9 +13,7 @@ export type PostMeta = {
   hasAffiliateLinks?: boolean;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-   export type Post = PostMeta & { body: any[] };
-
+export type Post = PostMeta & { body: any[] };
 const metaFields = `
   title,
   "slug": slug.current,
