@@ -14,7 +14,7 @@ export default function AboutPage() {
         About
       </span>
       <h1 className="mt-1 font-heading text-4xl font-bold text-ink">
-        The friend who's actually good with money.
+        The friend who&apos;s actually good with money.
       </h1>
 
       <div className="prose prose-brand mt-8 max-w-2xl">
