@@ -13,9 +13,8 @@ export type PostMeta = {
   hasAffiliateLinks?: boolean;
 };
 
-export type PortableTextBlock = Record<string, unknown>;
-
-export type Post = PostMeta & { body: PortableTextBlock[] };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+   export type Post = PostMeta & { body: any[] };
 
 const metaFields = `
   title,
