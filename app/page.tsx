@@ -3,6 +3,8 @@ import Container from '@/components/Container';
 import PostCard from '@/components/PostCard';
 import NewsletterForm from '@/components/NewsletterForm';
 import { getAllPostsMeta } from '@/lib/posts';
+
+export const revalidate = 60;
 import { categories } from '@/lib/site-config';
 
 export default async function HomePage() {

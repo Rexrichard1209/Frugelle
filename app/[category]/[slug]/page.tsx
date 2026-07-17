@@ -11,6 +11,8 @@ import { getAllPostParams, getPostBySlug, getRelatedPosts } from '@/lib/posts';
 import { urlFor } from '@/lib/sanity';
 import { DISCLAIMER_CATEGORIES, SITE_URL, getCategoryBySlug } from '@/lib/site-config';
 
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   return getAllPostParams();
 }

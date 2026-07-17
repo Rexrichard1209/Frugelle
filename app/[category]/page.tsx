@@ -6,6 +6,8 @@ import NewsletterForm from '@/components/NewsletterForm';
 import { getPostsByCategory } from '@/lib/posts';
 import { categories, getCategoryBySlug } from '@/lib/site-config';
 
+export const revalidate = 60;
+
 export function generateStaticParams() {
   return categories.map((cat) => ({ category: cat.slug }));
 }
