@@ -15,7 +15,7 @@ export default function PostCard({ post }: { post: PostMeta }) {
       href={`/${post.category}/${post.slug}`}
       className="group flex flex-col overflow-hidden rounded-xl border border-brand-100 bg-white transition hover:shadow-lg"
     >
-      <div className="relative aspect-[3/2] w-full overflow-hidden bg-brand-100">
+      <div className="relative aspect-[2/3] w-full overflow-hidden bg-brand-100">
         {imageUrl && (
           <Image
             src={imageUrl}
