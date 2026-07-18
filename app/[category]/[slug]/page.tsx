@@ -93,8 +93,7 @@ export default async function PostPage({
       />
 
       {heroImageUrl && (
-        <div className="relative aspect-[16/7] w-full bg-brand-100">
-          <Image
+<div className="relative aspect-[3/2] w-full bg-brand-100">          <Image
             src={heroImageUrl}
             alt={post.title}
             fill
